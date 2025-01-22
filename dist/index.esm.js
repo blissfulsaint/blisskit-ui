@@ -1,6 +1,4 @@
-'use strict';
-
-var jsxRuntime = require('react/jsx-runtime');
+import { jsx } from 'react/jsx-runtime';
 
 function Separator(_a) {
     var _b = _a.size, size = _b === undefined ? 'xxs' : _b;
@@ -28,14 +26,13 @@ function Separator(_a) {
             marginSize = 'my-96';
             break;
     }
-    return (jsxRuntime.jsx("div", { className: marginSize }));
+    return (jsx("div", { className: marginSize }));
 }
 
 function LayoutBand(_a) {
     var children = _a.children;
-    return (jsxRuntime.jsx("div", { className: "max-w-screen-lg mx-auto px-3", children: children }));
+    return (jsx("div", { className: "max-w-screen-lg mx-auto px-3", children: children }));
 }
 
-exports.LayoutBand = LayoutBand;
-exports.Separator = Separator;
-//# sourceMappingURL=index.js.map
+export { LayoutBand, Separator };
+//# sourceMappingURL=index.esm.js.map

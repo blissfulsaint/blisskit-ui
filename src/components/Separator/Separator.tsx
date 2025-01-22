@@ -1,10 +1,11 @@
-'use strict';
+interface SeparatorProps {
+    size?: string;
+}
 
-var jsxRuntime = require('react/jsx-runtime');
-
-function Separator(_a) {
-    var _b = _a.size, size = _b === undefined ? 'xxs' : _b;
-    var marginSize;
+export default function Separator({
+    size = 'xxs',
+}: SeparatorProps) {
+    let marginSize
     switch (size) {
         case 'xxs':
             marginSize = 'my-4';
@@ -28,14 +29,7 @@ function Separator(_a) {
             marginSize = 'my-96';
             break;
     }
-    return (jsxRuntime.jsx("div", { className: marginSize }));
+    return (
+        <div className={marginSize} />
+    )
 }
-
-function LayoutBand(_a) {
-    var children = _a.children;
-    return (jsxRuntime.jsx("div", { className: "max-w-screen-lg mx-auto px-3", children: children }));
-}
-
-exports.LayoutBand = LayoutBand;
-exports.Separator = Separator;
-//# sourceMappingURL=index.js.map
