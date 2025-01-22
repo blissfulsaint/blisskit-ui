@@ -30,10 +30,10 @@ pnpm add blisskit-ui
 
 Currently, there is a known issue where tailwind styles used in components within this library do not apply once consumed, even when tailwind has been independently configured in the consuming application. A fix is being worked on, but in the meantime, you can target the components themselves by modifying the content array in the tailwind.config.ts file in your application:
 
-```json
+```typescript
 content: [
   // Additional configurations
-  './node_modules/your-library-name/**/*.{js,jsx,ts,tsx}', // Your library's files
+  './node_modules/your-library-name/**/*.{js,jsx,ts,tsx}', // Library files
 ]
 ```
 
