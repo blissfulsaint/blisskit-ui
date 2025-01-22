@@ -1,18 +1,63 @@
 {
-  "name": "blissui",
+  "name": "blisskit-ui",
   "version": "1.0.0",
-  "description": "The official package containing basic UI elements developed by Brandon Lisonbee",
+  "private": false,
   "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/src/index.d.ts",
+  "type": "module",
   "scripts": {
-    "build": "babel src --out-dir dist",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "storybook dev -p 6006",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "build": "rollup -c",
+    "test": "jest",
+    "lint": "next lint"
   },
-  "author": "Brandon Lisonbee",
-  "license": "ISC",
-  "dependencies": {
-    "@babel/cli": "^7.26.4",
-    "@babel/core": "^7.26.0",
-    "@babel/preset-env": "^7.26.0",
-    "@babel/preset-react": "^7.26.3"
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "next": "^14.0.0 || ^15.0.0",
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
+  },
+  "peerDependenciesMeta": {
+    "next": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^3.2.4",
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "@storybook/addon-essentials": "^8.6.0-alpha.0",
+    "@storybook/addon-interactions": "^8.6.0-alpha.0",
+    "@storybook/addon-onboarding": "^8.6.0-alpha.0",
+    "@storybook/blocks": "^8.6.0-alpha.0",
+    "@storybook/nextjs": "^8.6.0-alpha.0",
+    "@storybook/react": "^8.6.0-alpha.0",
+    "@storybook/test": "^8.6.0-alpha.0",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.23",
+    "eslint-plugin-storybook": "^0.11.2",
+    "next": "^15.1.6",
+    "postcss": "^8",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "rollup": "^4.31.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "storybook": "^8.6.0-alpha.0",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
   }
 }
