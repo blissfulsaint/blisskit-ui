@@ -28,13 +28,13 @@ npm install blisskit-ui
 pnpm add blisskit-ui
 ```
 
-Currently, there is a known issue where tailwind styles used in components within this library do not apply once consumed, even when tailwind has been independently configured in the consuming application. A fix is being worked on, but in the meantime, you can target the components themselves by modifying the content array in the tailwind.config.ts file in your application:
+This library also uses TailwindCSS for styling and requires correct TailwindCSS configuration in the consuming project in order to properly render. Ensure that TailwindCSS is installed in your project (please refer to [Tailwind's Official Website](https://tailwindcss.com/) for documentation on how to do this) and implement the following in your tailwind.config.ts file in the root of your project:
 
 ```typescript
 content: [
-  // Additional configurations
   './node_modules/your-library-name/**/*.{js,jsx,ts,tsx}', // Library files
+  // Additional configurations
 ]
 ```
 
-Once applied, tailwind styles from this library should show up in the consuming application. 
+This will target the library's components within node_modules. Once applied, TailwindCSS styles from this library should render correctly in the consuming application. 
