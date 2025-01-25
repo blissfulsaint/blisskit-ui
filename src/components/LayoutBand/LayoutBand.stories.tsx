@@ -7,6 +7,13 @@ const meta = {
   title: 'Layout/LayoutBand',
   component: LayoutBand,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'The `LayoutBand` component is used to apply a max width with some padding to children of the component. This is also used to center the children to assist in managing the layout of the core UI.',
+      },
+    },
+  },
 } satisfies Meta<typeof LayoutBand>;
 
 export default meta;
@@ -15,9 +22,9 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {
     children: (
-      <div>
-        <h1 className='block bg-slate-800 p-2 rounded'>This is inside a default LayoutBand!</h1>
-        <p className='block bg-slate-800 p-2 rounded'>
+      <div className='bg-background'>
+        <h1 className='block p-2'>This is inside a default LayoutBand!</h1>
+        <p className='block p-2'>
           The `LayoutBand` component centers its children and applies a max width
           with padding. Resize the screen to see how it behaves responsively.
         </p>

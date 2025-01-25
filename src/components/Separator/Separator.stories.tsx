@@ -16,12 +16,19 @@ const meta = {
       description: 'The size of the separator (affects the margin)',
     },
   },
+  parameters: {
+    docs: {
+      description: {
+        component: 'The `Separator` component is used to create a visual divider between content sections. It supports various sizes to control the spacing.',
+      },
+    },
+  },
   decorators: [
     (Story, context) => (
       <div className='text-center w-48'>
-        <p className='block bg-slate-800 p-2 rounded'>Above the separator</p>
+        <p className='block bg-slate-800 p-2 rounded text-white'>Above the separator</p>
         <Story {...context} />
-        <p className='block bg-slate-800 p-2 rounded'>Below the separator</p>
+        <p className='block bg-slate-800 p-2 rounded text-white'>Below the separator</p>
       </div>
     ),
   ],
