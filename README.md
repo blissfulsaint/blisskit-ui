@@ -1,4 +1,4 @@
-# Welcome to Blisskit-Ui
+# Welcome to BlissKit-UI
 
 This is the home for all UI components independently developed by Brandon Lisonbee for use in his projects. This repository and corresponding package on NPM is publicly available for anyone to use as well.
 
@@ -32,9 +32,9 @@ This library also uses TailwindCSS for styling and requires correct TailwindCSS 
 
 ```typescript
 content: [
-  './node_modules/your-library-name/**/*.{js,jsx,ts,tsx}', // Library files
+  "./node_modules/your-library-name/**/*.{js,jsx,ts,tsx}", // Library files
   // Additional configurations
-]
+];
 ```
 
-This will target the library's components within node_modules. Once applied, TailwindCSS styles from this library should render correctly in the consuming application. 
+This will target the library's components within node_modules. Once applied, TailwindCSS styles from this library should render correctly in the consuming application.

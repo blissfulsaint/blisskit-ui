@@ -3,6 +3,7 @@ import clsx from "clsx";
 
 interface CardLinkProps {
     colspan?: string;
+    textClassName?: string;
     className?: string;
     imgSrc?: string;
     href?: string;
@@ -12,6 +13,7 @@ interface CardLinkProps {
 
 export default function CardLink({
     colspan = 'col-span-1',
+    textClassName,
     className,
     imgSrc,
     href = '#',
@@ -35,7 +37,10 @@ export default function CardLink({
                             backgroundPosition: 'center',
                         }}
                     ></div>
-                    <p className="absolute bottom-0 left-0 w-full text-center p-2 py-3 text-xl bg-primaryColor text-white">{title}</p>
+                    <p className={clsx(
+                        "absolute bottom-0 left-0 w-full text-center p-2 py-3 text-xl bg-blue-400 text-white",
+                        textClassName
+                    )}>{title}</p>
                 </div>
             </Link>
         </div>
