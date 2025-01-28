@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/), and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [1.1.1] - 2025-01-27
+
+### Fixed
+
+- Fixed issue with npm package build that caused new CardLink component to be omitted from final build.
+
 ## [1.1.0] - 2025-01-27
 
 ### Added
