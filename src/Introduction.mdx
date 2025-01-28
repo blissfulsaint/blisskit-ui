@@ -1,23 +1,11 @@
-# Welcome to BlissKit-UI
+import { Meta } from "@storybook/blocks";
 
-This is the home for all UI components independently developed by Brandon Lisonbee for use in his projects. This repository and corresponding package on NPM is publicly available for anyone to use as well.
+<Meta title="Introduction" />
+
+# Welcome to BlissKit-UI!
+This component library is designed to streamline UI development with pre-styled, accessible, and flexible React components powered by Tailwind CSS.
 
 ## Getting Started
-
-This project uses Storybook to display UI components. To run this repository on your device, clone the repository and run the following commands:
-
-```bash
-# Install dependencies
-npm install
-
-# Start Storybook
-npm run dev
-```
-
-This will begin a development server in Storybook.
-
-## Consuming this library
-
 This library is published on npm and can be installed as a dependency in your Next.js application. Please note that consuming this library does require Next.js version 15 or higher, as well as React and React-DOM 19 or higher.
 
 ```bash
@@ -32,9 +20,19 @@ This library also uses TailwindCSS for styling and requires correct TailwindCSS 
 
 ```typescript
 content: [
-  "./node_modules/your-library-name/**/*.{js,jsx,ts,tsx}", // Library files
+  './node_modules/your-library-name/**/*.{js,jsx,ts,tsx}', // Library files
   // Additional configurations
-];
+]
 ```
 
 This will target the library's components within node_modules. Once applied, TailwindCSS styles from this library should render correctly in the consuming application.
+
+Once installed and configured, the library should be ready to use. You can test implementation by importing a component from the library:
+
+```typescript
+import { CardLink } from 'blisskit-ui';
+
+function App() {
+    return <CardLink title="Click Me" />
+}
+```

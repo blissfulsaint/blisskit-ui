@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/), and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [1.1.0] - 2025-01-27
+
+### Added
+
+- Added CardLink component and corresponding stories file.
+- Added Introduction.mdx for Storybook.
+
 ## [1.0.2] - 2025-01-24
 
 ### Updated
