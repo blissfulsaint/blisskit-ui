@@ -32,7 +32,7 @@ This library also uses TailwindCSS for styling and requires correct TailwindCSS 
 
 ```typescript
 content: [
-  "./node_modules/your-library-name/**/*.{js,jsx,ts,tsx}", // Library files
+  "./node_modules/blisskit-ui/**/*.{js,jsx,ts,tsx}", // Library files
   // Additional configurations
 ];
 ```
