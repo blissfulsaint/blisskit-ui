@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/), and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [1.2.0] - 2025-02-25
+
+### Added
+
+- Added new StatusMessage component and corresponding Storybook entry.
+- Updated README.md and introduction.mdx, fixing the instructions for tailwindcss configuration to make it more clear what the node_modules reference should be.
+
 ## [1.1.2] - 2025-01-27
 
 ### Fixed
