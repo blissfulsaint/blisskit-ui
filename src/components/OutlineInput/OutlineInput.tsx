@@ -13,7 +13,7 @@ export default function OutlineInput({
         <input 
             {...rest}
             className={clsx(
-                'block border rounded-md px-2 py-1 w-full bg-background',
+                'block border rounded-md px-2 py-1 w-full bg-transparent',
                 borderColor,
                 className
             )}

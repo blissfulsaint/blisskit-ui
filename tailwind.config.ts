@@ -16,7 +16,6 @@ const config: Config = {
   plugins: [],
   safelist: [
     { pattern: /(border|text|bg)-(red|orange|amber|yellow|lime|green|emerald|teal|cyan|sky|blue|indigo|violet|purple|fuchsia|pink|rose|slate|gray|zinc|neutral|stone)/ },
-    
   ],
 };
 export default config;

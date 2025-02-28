@@ -4,6 +4,11 @@ import React from 'react';
 import Form from './Form';
 
 import OutlineFieldset from '../OutlineFieldset/OutlineFieldset';
+import OutlineFieldsetLegend from '../OutlineFieldsetLegend/OutlineFieldsetLegend';
+import InputContainer from '../InputContainer/InputContainer';
+import OutlineInput from '../OutlineInput/OutlineInput';
+import FormButton from '../FormButton/FormButton';
+import StatusMessage from '../StatusMessage/StatusMessage';
 
 const meta = {
   title: 'Form/Form',
@@ -25,7 +30,12 @@ export const Default: Story = {
   args: {
     children: (
       <OutlineFieldset>
-        <legend>Fieldset Example</legend>
+        <OutlineFieldsetLegend>Default Form</OutlineFieldsetLegend>
+        <InputContainer>
+          <label>Example Input:</label>
+          <OutlineInput />
+        </InputContainer>
+        <FormButton>Submit</FormButton>
       </OutlineFieldset>
     )
   }
@@ -36,7 +46,8 @@ export const WithCustomTheme: Story = {
         primaryColor: 'red-500',
         children: (
             <OutlineFieldset>
-                <legend>With Red Theme</legend>
+                <OutlineFieldsetLegend>With Red Theme</OutlineFieldsetLegend>
+                <FormButton>Submit</FormButton>
             </OutlineFieldset>
         )
     }
