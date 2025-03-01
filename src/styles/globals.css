@@ -9,12 +9,14 @@
   --font-roboto: 'Roboto', sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
+/* Due to Storybook-specific errors, dark mode accommodation has been disabled for this project. 
+However, all components will still work fine in the dark mode of consuming projects assuming correct dark mode configuration. */
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   color: var(--foreground);

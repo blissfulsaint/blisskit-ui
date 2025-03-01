@@ -1,0 +1,37 @@
+import { Canvas, Meta } from "@storybook/blocks";
+
+import * as FormStories from "./Form.stories";
+
+<Meta of={FormStories} />
+
+# Form
+
+The `Form` component is used to provide a consistent logical and UI framework for forms across an application, complete with a proprietary `FormContext` that assists in applying a consistent theme to compatible child elements (also included in this library) and a modified action prop that allows for server actions with more complex state management.
+
+<Canvas of={FormStories.Default} />
+
+### TailwindCSS configuration
+
+To take full advantage of `FormContext`, which dynamically creates appropriate TailwindCSS classes based on the `primaryColor` prop, the tailwind.config.ts file will need to be configured to "safelist" the classname patterns that will be passed into the prop. Here is an example:
+
+```typescript
+safelist: [
+  {
+    pattern: /(border|text|bg)-(red|orange|yellow|green|blue|purple|pink)/,
+    variants: ['hover']
+  },
+],
+```
+
+The `pattern` parameter defines the patterns that TailwindCSS will automatically include in the available classlist for a component to ensure that dynamically generated classnames that fit this pattern will still apply. The `variants` parameter helps ensure that specified variants of the border, text, or bg classes
+
+To ensure that all possible color classes included in base TailwindCSS are included, simply implement the following code in your tailwind.config.ts file:
+
+```typescript
+safelist: [
+  {
+    pattern: /(border|text|bg)-(red|orange|amber|yellow|lime|green|emerald|teal|cyan|sky|blue|indigo|violet|purple|fuchsia|pink|rose|slate|gray|zinc|neutral|stone)/,
+    variants: ['hover']
+  },
+],
+```
