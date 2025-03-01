@@ -4,3 +4,8 @@ export { default as CardLink } from './components/CardLink/CardLink';
 export { default as StatusMessage } from './components/StatusMessage/StatusMessage';
 export { default as Form } from './components/Form/Form';
 export { default as OutlineFieldset } from './components/OutlineFieldset/OutlineFieldset';
+export { default as FormButton } from './components/FormButton/FormButton';
+export { default as InputContainer } from './components/InputContainer/InputContainer';
+export { default as LoadingSpinner } from './components/LoadingSpinner/LoadingSpinner';
+export { default as OutlineFieldsetLegend } from './components/OutlineFieldsetLegend/OutlineFieldsetLegend';
+export { default as OutlineInput } from './components/OutlineInput/OutlineInput';

@@ -38,10 +38,14 @@ export const WithCustomTheme: Story = {
         primaryColor: 'red-500',
         action: '#',
         children: (
-            <OutlineFieldset>
-                <OutlineFieldsetLegend>With Red Theme</OutlineFieldsetLegend>
-                <FormButton>Submit</FormButton>
-            </OutlineFieldset>
+          <OutlineFieldset>
+            <OutlineFieldsetLegend>Custom Theme</OutlineFieldsetLegend>
+            <InputContainer>
+              <label>Example Input:</label>
+              <OutlineInput />
+            </InputContainer>
+            <FormButton>Submit</FormButton>
+          </OutlineFieldset>
         )
     }
 }
