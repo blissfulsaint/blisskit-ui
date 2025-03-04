@@ -1,6 +1,6 @@
 # Welcome to BlissKit-UI
 
-This is the home for all UI components independently developed by Brandon Lisonbee for use in his projects. This repository and corresponding package on NPM is publicly available for anyone to use as well.
+This is the home for all UI components independently developed by Brandon Lisonbee for use in his projects. This repository and corresponding package on NPM is publicly available for anyone to use as well. You may also view the BlissKit-UI [Storybook documentation](https://blisskit-ui-storybook.vercel.app/) to learn more about the individual components contained in this library.
 
 ## Getting Started
 
