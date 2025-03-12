@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react/*";
+import type { Meta, StoryObj } from "@storybook/react/";
 import React from "react";
 
 import InputContainer from './InputContainer';
@@ -16,7 +16,7 @@ const meta = {
     parameters: {
         docs: {
             description: {
-                component: 'The `InputContainer` component is designed for use within a `Fieldset` component and helps maintain consistent spacing and semantic clarity for `Input` fields in a `Form` component.'
+                component: '***IMPORTANT: This component, as well as all other Form components (aside from StatusMessage), caused unintended behavior across the library in ver. 1.3.0 and 1.3.1 and has been deprecated until a fix can be created. Please use ver. 1.3.2 or higher.*** \n\nThe `InputContainer` component is designed for use within a `Fieldset` component and helps maintain consistent spacing and semantic clarity for `Input` fields in a `Form` component.'
             }
         }
     },

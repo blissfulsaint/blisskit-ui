@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/), and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [1.3.2] - 2025-03-12
+
+### Removed
+
+- Removed exports and declarations for Form and its related components (excluding StatusMessage) due to unintended behavior when importing any component from the library as a result of useContext.
+
 ## [1.3.1] - 2025-03-03
 
 ### Updated
