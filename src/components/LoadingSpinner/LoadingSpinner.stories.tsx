@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react/*";
+import type { Meta, StoryObj } from "@storybook/react/";
 
 import LoadingSpinner from './LoadingSpinner';
 
@@ -9,7 +9,7 @@ const meta = {
     parameters: {
         docs: {
             description: {
-                component: 'The `LoadingSpinner` component is a simple component intended to show loading state. It is included in the `FormButton` component as a child element and renders while the button is in a loading state.'
+                component: '***IMPORTANT: This component, as well as all other Form components (aside from StatusMessage), caused unintended behavior across the library in ver. 1.3.0 and 1.3.1 and has been deprecated until a fix can be created. Please use ver. 1.3.2 or higher.*** \n\nThe `LoadingSpinner` component is a simple component intended to show loading state. It is included in the `FormButton` component as a child element and renders while the button is in a loading state.'
             }
         }
     }

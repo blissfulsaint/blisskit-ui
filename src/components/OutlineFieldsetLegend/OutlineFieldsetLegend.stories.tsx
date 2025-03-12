@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react/*";
+import type { Meta, StoryObj } from "@storybook/react/";
 import React from "react";
 
 import OutlineFieldsetLegend from './OutlineFieldsetLegend';
@@ -13,7 +13,7 @@ const meta = {
     parameters: {
         docs: {
             description: {
-                component: 'The `OutlineFieldsetLegend` component is intended for use within an `OutlineFieldset` component, taking advantage of `FormContext` (check the docs for `Form` for more details) while a decendant of a `Form` element.'
+                component: '***IMPORTANT: This component, as well as all other Form components (aside from StatusMessage), caused unintended behavior across the library in ver. 1.3.0 and 1.3.1 and has been deprecated until a fix can be created. Please use ver. 1.3.2 or higher.*** \n\nThe `OutlineFieldsetLegend` component is intended for use within an `OutlineFieldset` component, taking advantage of `FormContext` (check the docs for `Form` for more details) while a decendant of a `Form` element.'
             }
         }
     },
