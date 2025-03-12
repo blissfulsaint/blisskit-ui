@@ -3,8 +3,8 @@ export * from './Separator';
 export * from './CardLink';
 export * from './StatusMessage';
 
-// The following exports are removed while troubleshooting is done
-// on problematic components
+// The following exports were removed in version 1.3.2 due to unintended behavior.
+// Exports will be restored when issues are fixed.
 // export * from './Form';
 // export * from './OutlineFieldset';
 // export * from './FormButton';

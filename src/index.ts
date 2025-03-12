@@ -3,8 +3,8 @@ export { default as LayoutBand } from './components/LayoutBand/LayoutBand';
 export { default as CardLink } from './components/CardLink/CardLink';
 export { default as StatusMessage } from './components/StatusMessage/StatusMessage';
 
-// The following exports are removed while troubleshooting is done
-// on problematic components
+// The following exports were removed in version 1.3.2 due to unintended behavior.
+// Exports will be restored when issues are fixed.
 // export { default as Form } from './components/Form/Form';
 // export { default as OutlineFieldset } from './components/OutlineFieldset/OutlineFieldset';
 // export { default as FormButton } from './components/FormButton/FormButton';
