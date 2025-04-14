@@ -28,7 +28,7 @@ export const Default: Story = {
 export const WithImage: Story = {
     args: {
         title: 'With Image',
-        imgSrc: './sample-background-image.jpg'
+        imgSrc: './tetons.jpg'
     }
 }
 

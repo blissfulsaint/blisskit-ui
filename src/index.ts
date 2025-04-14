@@ -2,6 +2,7 @@ export { default as Separator } from './components/Separator/Separator';
 export { default as LayoutBand } from './components/LayoutBand/LayoutBand';
 export { default as CardLink } from './components/CardLink/CardLink';
 export { default as StatusMessage } from './components/StatusMessage/StatusMessage';
+export { default as CardLinkGrid } from './components/CardLinkGrid/CardLinkGrid';
 
 // The following exports were removed in version 1.3.2 due to unintended behavior.
 // Exports will be restored when issues are fixed.
