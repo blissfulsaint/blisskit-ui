@@ -2,6 +2,7 @@ export * from './LayoutBand';
 export * from './Separator';
 export * from './CardLink';
 export * from './StatusMessage';
+export * from './CardLinkGrid';
 
 // The following exports were removed in version 1.3.2 due to unintended behavior.
 // Exports will be restored when issues are fixed.
