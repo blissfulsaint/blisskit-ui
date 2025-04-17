@@ -2,6 +2,7 @@ import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import typescript from "@rollup/plugin-typescript";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
+import typescript from '@rollup/plugin-typescript';
 
 export default {
   input: "src/index.ts",
@@ -23,6 +24,12 @@ export default {
     commonjs(),
     typescript({
       tsconfig: "./tsconfig.json",
+    }),
+    postcss({
+      modules: true,
+      extract: true,
+      minimize: true,
+      sourceMap: true,
     }),
   ],
   external: ["react", "react-dom", "next"],
