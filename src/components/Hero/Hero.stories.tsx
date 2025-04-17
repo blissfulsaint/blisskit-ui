@@ -21,6 +21,13 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
     args: {
-        title: 'Sample Hero'
+        title: 'Default Hero'
+    }
+}
+
+export const WithImage: Story = {
+    args: {
+        title: 'Hero with image',
+        imgSrc: './tetons.jpg'
     }
 }
