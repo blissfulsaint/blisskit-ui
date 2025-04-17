@@ -1,4 +1,3 @@
-'use client';
 import { useEffect, useState } from "react";
 import { LayoutBand } from "../LayoutBand";
 import clsx from "clsx";
