@@ -4,6 +4,8 @@ export { default as CardLink } from './components/CardLink/CardLink';
 export { default as StatusMessage } from './components/StatusMessage/StatusMessage';
 export { default as CardLinkGrid } from './components/CardLinkGrid/CardLinkGrid';
 
+export { default as Hero } from './components/Hero/Hero';
+
 // The following exports were removed in version 1.3.2 due to unintended behavior.
 // Exports will be restored when issues are fixed.
 // export { default as Form } from './components/Form/Form';

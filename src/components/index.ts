@@ -4,6 +4,8 @@ export * from './CardLink';
 export * from './StatusMessage';
 export * from './CardLinkGrid';
 
+export * from './Hero';
+
 // The following exports were removed in version 1.3.2 due to unintended behavior.
 // Exports will be restored when issues are fixed.
 // export * from './Form';
